@@ -1,7 +1,7 @@
 {
     "name": "firefox-graffiti-bold",
-    "displayName": "Firefox Graffiti Bold",
-    "description": "",
+    "displayName": "Firefox Graffiti Bold Theme",
+    "description": "A theme that mimics the Firefox Graffiti Bold theme",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.69.0"
