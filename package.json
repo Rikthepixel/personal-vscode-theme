@@ -1,0 +1,21 @@
+{
+    "name": "firefox-graffiti-bold",
+    "displayName": "Firefox Graffiti Bold",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.69.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Firefox Graffiti Bold",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Firefox Graffiti Bold-color-theme.json"
+            }
+        ]
+    }
+}
