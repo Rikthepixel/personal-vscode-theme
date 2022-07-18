@@ -3,7 +3,7 @@
     "displayName": "Personal VSCode Theme",
     "description": "A theme that mimics the Firefox Graffiti Bold theme",
     "license": "MIT",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "repository": "https://github.com/Rikthepixel/firefox-graffiti-bold.git",
     "scripts": {
         "build:theme": "vsce package -o ./dist/assets/theme.vsix",
