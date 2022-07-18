@@ -63,7 +63,7 @@
         }
 
         .emoji {
-            font-family: Helvetica, Arial, sans-serif;
+            font-family: Segoe UI Emoji, Tweemoji Mozilla, Arial, Emojione;
         }
 
         .clear {
@@ -140,19 +140,25 @@
 
 <body>
     <aside id="back-button-container">
-        <a id="back-button" href="/#/" class="clear">🔙</a>
+        <a id="back-button" href="/#/" class="clear">
+            <span class="emoji">🔙</span>
+        </a>
     </aside>
     <div id="app-container">
         <section id="app">
             <header id="header" class="text-center">
-                <h1>Personal VSCode Theme <span class="emoji">🖌</span></h1>
+                <h1>
+                    Personal VSCode Theme <span class="emoji">🖌</span>
+                </h1>
                 <p>Based on Firefox - Graffiti bold theme</p>
             </header>
 
             <div id="theme-example-container">
                 <img id="theme-example" class="shade" width="1920" height="1033" src="./assets/ThemeExample.png" alt="">
             </div>
-            <a class="shade" href="./assets/theme.vsix" download>Download Theme 📦</a>
+            <a class="shade" href="./assets/theme.vsix" download>
+                Download Theme <span class="emoji">📦</span>
+            </a>
         </section>
     </div>
 </body>
