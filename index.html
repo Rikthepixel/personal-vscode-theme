@@ -31,7 +31,6 @@
             display: flex;
             flex-direction: column;
             height: 100%;
-            overflow: hidden;
         }
 
         body {
@@ -63,8 +62,13 @@
             font-weight: 200;
         }
 
+        .emoji {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
         .clear {
             background-color: transparent;
+            text-decoration-color: transparent;
             padding: 0;
         }
 
@@ -83,21 +87,25 @@
             text-align: center;
         }
 
+        #app-container {
+            flex: 1;
+            max-height: 100vh;
+        }
+
         #app {
             display: flex;
             flex: 1;
             flex-direction: column;
             align-items: center;
             justify-content: start;
+            gap: 2rem;
             padding: 4rem;
             padding-left: 0;
-            gap: 2rem;
-            overflow: auto;
+            height: 100%;
         }
 
         #theme-example {
             max-height: 75vh;
-            min-height: 15rem;
         }
 
         #header {
@@ -112,6 +120,21 @@
             font-size: 3rem;
             display: block;
         }
+
+        @media (max-width: 540px) {
+            body {
+                flex-direction: column;
+            }
+
+            #app {
+                padding-inline: 0;
+                padding-top: 0;
+            }
+
+            #theme-example-container {
+                padding: 1rem;
+            }
+        }
     </style>
 </head>
 
@@ -119,15 +142,19 @@
     <aside id="back-button-container">
         <a id="back-button" href="/#/" class="clear">🔙</a>
     </aside>
-    <section id="app">
-        <header id="header" class="text-center">
-            <h1>Personal VSCode Theme</h1>
-            <p>Based on Firefox - Graffiti bold theme</p>
-        </header>
+    <div id="app-container">
+        <section id="app">
+            <header id="header" class="text-center">
+                <h1>Personal VSCode Theme <span class="emoji">🖌</span></h1>
+                <p>Based on Firefox - Graffiti bold theme</p>
+            </header>
 
-        <img id="theme-example" class="shade" width="1920" height="1033" src="./assets/ThemeExample.jpg" alt="">
-        <a class="shade" href="./assets/theme.vsix" download>Download Theme</a>
-    </section>
+            <div id="theme-example-container">
+                <img id="theme-example" class="shade" width="1920" height="1033" src="./assets/ThemeExample.png" alt="">
+            </div>
+            <a class="shade" href="./assets/theme.vsix" download>Download Theme 📦</a>
+        </section>
+    </div>
 </body>
 
 </html>
