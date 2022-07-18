@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
-const { minify } = require("minify");
-console.log(minify);
+// const { minify } = require("minify");
+// console.log(minify);
 if (fs.existsSync("./dist")) {
     console.log("Build docs: Clearing dist folder");
     fs.rmSync("dist", {
@@ -36,4 +36,4 @@ const forFilesWithExtention = (dir, ext, onFound) => {
     });
 };
 
-forFilesWithExtention("./dist", "html", (path) => minify(path));
+// forFilesWithExtention("./dist", "html", (path) => minify(path));
