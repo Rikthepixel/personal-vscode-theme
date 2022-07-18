@@ -8,7 +8,7 @@
     "scripts": {
         "build:theme": "vsce package -o ./dist/assets/theme.vsix",
         "build:theme-to-docs": "vsce package -o ./docs/assets/theme.vsix",
-        "build:docs": "cd scripts && build-docs.bat",
+        "build:docs": "node ./scripts/build-docs.js",
         "build": "npm run build:docs && npm run build:theme",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d dist"
@@ -30,6 +30,7 @@
     },
     "devDependencies": {
         "gh-pages": "^4.0.0",
+        "minify": "^9.1.0",
         "vsce": "^2.9.3"
     }
 }
