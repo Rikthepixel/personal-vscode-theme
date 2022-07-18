@@ -5,6 +5,7 @@
     "license": "MIT",
     "version": "1.0.0",
     "repository": "https://github.com/Rikthepixel/firefox-graffiti-bold.git",
+    "type": "module",
     "scripts": {
         "build:theme": "vsce package -o ./dist/assets/theme.vsix",
         "build:theme-to-docs": "vsce package -o ./docs/assets/theme.vsix",
